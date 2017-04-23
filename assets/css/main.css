@@ -1,13 +1,5 @@
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
-
-/*
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
-/* Reset */
+@import url("https://fonts.googleapis.com/css?family=Roboto|Neuton|Roboto+Slab");
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
@@ -1396,7 +1388,7 @@
 	}
 
 	body {
-		background: #2e3842;
+		background: #707070;
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -1412,7 +1404,7 @@
 
 	body, input, select, textarea {
 		color: #fff;
-		font-family: "Open Sans", Helvetica, sans-serif;
+		font-family: "Neuton", serif;
 		font-size: 15pt;
 		font-weight: 400;
 		letter-spacing: 0.075em;
@@ -1422,7 +1414,7 @@
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
-				font-size: 13pt;
+				font-size: 15pt;
 			}
 
 		}
@@ -1430,7 +1422,7 @@
 		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 14pt;
 			}
 
 		}
@@ -1438,7 +1430,7 @@
 		@media screen and (max-width: 736px) {
 
 			body, input, select, textarea {
-				font-size: 11pt;
+				font-size: 13pt;
 				letter-spacing: 0.0375em;
 			}
 
@@ -1473,11 +1465,12 @@
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #fff;
+        font-family: "Roboto", Helvetica, sans-serif;
 		font-weight: 800;
-		letter-spacing: 0.225em;
+		/*letter-spacing: 0.225em;*/
 		line-height: 1em;
 		margin: 0 0 1em 0;
-		text-transform: uppercase;
+		/*text-transform: uppercase;*/
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1804,7 +1797,7 @@
 
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
-			background: #2e3842;
+			background: #707070;
 			color: #fff;
 			content: '\f00c';
 		}
@@ -1851,7 +1844,7 @@
 
 	.box {
 		border-radius: 3px;
-		border: solid 2px #fff;
+		border: solid 2px;
 		margin-bottom: 2em;
 		padding: 1.5em;
 	}
@@ -1867,6 +1860,11 @@
 			border-radius: 0;
 			padding: 0;
 		}
+
+	.box {
+		border-color: rgba(0, 0, 0, 0.2);
+	}
+
 
 /* Icon */
 
@@ -2240,6 +2238,7 @@
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.8em;
+        font-family: "Roboto", Helvetica, sans-serif;
 		font-weight: 600;
 		height: 3.125em;
 		letter-spacing: 0.225em;
@@ -2795,7 +2794,7 @@
 			}
 
 		.wrapper.style2 {
-			background-color: #2e3842;
+			background-color: #707070;
 		}
 
 		.wrapper.style3 {
@@ -2962,11 +2961,11 @@
 		}
 
 			.wrapper.style5 strong, .wrapper.style5 b {
-				color: #2E3842;
+				color: #707070;
 			}
 
 			.wrapper.style5 h2, .wrapper.style5 h3, .wrapper.style5 h4, .wrapper.style5 h5, .wrapper.style5 h6 {
-				color: #2E3842;
+				color: #707070;
 			}
 
 			.wrapper.style5 hr {
@@ -2994,7 +2993,7 @@
 			}
 
 			.wrapper.style5 label {
-				color: #2E3842;
+				color: #707070;
 			}
 
 			.wrapper.style5 input[type="text"],
@@ -3021,7 +3020,7 @@
 
 			.wrapper.style5 input[type="checkbox"]:checked + label:before,
 			.wrapper.style5 input[type="radio"]:checked + label:before {
-				background: #2E3842;
+				background: #707070;
 				color: #ffffff;
 			}
 
@@ -3062,7 +3061,7 @@
 				}
 
 			.wrapper.style5 table th {
-				color: #2E3842;
+				color: #707070;
 			}
 
 			.wrapper.style5 table thead {
@@ -3083,7 +3082,7 @@
 			.wrapper.style5 button,
 			.wrapper.style5 .button {
 				box-shadow: inset 0 0 0 2px #dfdfdf;
-				color: #2E3842;
+				color: #707070;
 			}
 
 				.wrapper.style5 input[type="submit"]:hover,
@@ -3174,6 +3173,7 @@
 	}
 
 		#menu ul {
+            font-family: "Roboto", Helvetica, sans-serif;
 			list-style: none;
 			padding: 0;
 		}
@@ -3254,7 +3254,7 @@
 		-webkit-transition: background-color 0.2s ease;
 		-ms-transition: background-color 0.2s ease;
 		transition: background-color 0.2s ease;
-		background: #2e3842;
+		background: #707070;
 		height: 3em;
 		left: 0;
 		line-height: 3em;
@@ -3292,6 +3292,7 @@
 				}
 
 		#header nav {
+            font-family: "Roboto", Helvetica, sans-serif;
 			height: inherit;
 			line-height: inherit;
 			position: absolute;
@@ -3300,7 +3301,8 @@
 		}
 
 			#header nav > ul {
-				list-style: none;
+				font-family: "Roboto", Helvetica, sans-serif;
+                list-style: none;
 				margin: 0;
 				padding: 0;
 				white-space: nowrap;
@@ -3394,6 +3396,7 @@
 		overflow: hidden;
 		position: relative;
 		text-align: center;
+/*        background-image: url("images/");*/
 	}
 
 		#banner h2 {
@@ -3465,6 +3468,7 @@
 			border: none;
 			bottom: 0;
 			color: inherit;
+            font-family: "Roboto", Helvetica, sans-serif;
 			font-size: 0.8em;
 			height: 8.5em;
 			left: 50%;
@@ -3509,7 +3513,7 @@
 			-ms-transition-delay: 1.25s;
 			transition-delay: 1.25s;
 			content: '';
-			background: #2e3842;
+			background: #707070;
 			display: block;
 			width: 100%;
 			height: 100%;
@@ -3700,8 +3704,8 @@
 /* Footer */
 
 	#footer {
-		padding: 6em 0 4em 0 ;
-		background-color: #1d242a;
+		padding: 2em 0 2em 0 ;
+		background-color: #707070;
 		text-align: center;
 	}
 
@@ -3791,7 +3795,7 @@
 	}
 
 	body.landing #footer {
-		background-color: rgba(29, 36, 42, 0.9);
+		background-color: rgba(112, 112, 112, 0.9);
 	}
 
 	body.is-mobile.landing #page-wrapper {
@@ -3810,5 +3814,5 @@
 	}
 
 	body.is-mobile.landing #footer {
-		background-color: #1d242a;
+		background-color: #707070;
 	}
