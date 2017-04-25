@@ -83,6 +83,11 @@
 								
                                 <p>The focus from non violent and petty crimes in the past have turned into one focused on drug possession and sales. With the Anti-Drug Abuse Act of 1986 there are mandatory minimums for drug offenses. There are also monetary incentives for state and local police agencies to implement the war on drugs. Similarly to convict leasing private companies have a cheap, easy labor market, "Federal funding has flowed to state and local law enforcement agencies who boost the sheer numbers of drug arrests. State and local law enforcement agencies have been rewarded in cash for the sheer numbers of people swept into the system for drug offenses, thus giving law enforcement agencies an incentive to go out and look for the so-called 'low-hanging fruit': stopping, frisking, searching as many people as possible, pulling over as many cars as possible, in order to boost their numbers up and ensure the funding stream will continue or increase." </p>
                                 
+                                <span class="image fit"><div id="MaleArrestsRatesbyOffenseType" style="min-width: 310px; width: 66%; height: 500px; margin: 0 auto"></div><center><p style="font-size:10pt; line-height:1.25em; width: 66%; color:#8E8892"><b>Source:</b> Snyder (2011) for 1980 data and FBI Uniform Crime Reporting Program data (U.S. Department of Justice, Federal Bureau of Investigation 2009) for 2009</p>
+                                <p style="font-size:10pt; line-height:1.25em; width: 66%; color:#8E8892"><i>Even though whites engage in drug offenses at a higher rate than African-Americans, African-Americans are arrested over three times more than white Americans for drug possession.</i></p>
+                                </center>  
+                                </span>
+                                
                                 <p>Prison labor by private corporations such as IBM, Motorola, Microsoft, AT&T, Macy’s and Target is legal in 37 states. Under the Work Opportunity Tax Credit, these employers receive a tax credit of $2,400 for every work release inmate they employ as a reward for hiring “risky target groups” and they can "earn back up to 40 percent of the wages they pay annually to target group workers." Most prisoners in state penitentiaries generally receive minimum wage for their work, those in private prisons make as little as 17 cents per hour. With such cheap labor in 1980 profits were $392 million, by 1994 it rose to $1.31 billion. In 2010, the two largest private prison companies alone received nearly $3 billion dollars in revenue.</p>
                                 
                                 <p>Another ongoing issue is systematic exclusion of blacks from juries. Even though the exclusion of jurors on the basis of race has been illegal since 1880, today defendants face a similar situation.  A formal prohibition against race-based peremptory strikes does exist, the Court has tolerated the systematic exclusion of blacks from juries by allowing lower courts to accept “silly” and even “superstitious” reasons for removing black jurors.36 In addition, about 30 percent of black men (about) are automatically excluded from jury service because they have been labeled felons.37</p>
@@ -111,10 +116,11 @@
 			<script src="https://code.highcharts.com/highcharts.js"></script>
             <script src="https://code.highcharts.com/modules/exporting.js"></script>
             
-        <!-- Chart Style -->    
+            
+        <!-- Male Lifetime Likelihood of Going to State or Federal Prison by Race Chart -->    
             <script>
                 $(function () { 
-                // set the theme
+                    // set the theme
                 Highcharts.createElement('link', {
                    href: 'https://fonts.googleapis.com/css?family=Neuton|Roboto',
                    rel: 'stylesheet',
@@ -214,13 +220,8 @@
                         }
                     }
                 });
-            });
-            </script>
-            
-        <!-- Male Lifetime Likelihood of Going to State or Federal Prison by Race Chart -->    
-            <script>
-                $(function () { 
-               var myChart1E = Highcharts.chart('MaleLifetimeLikelihoodofGoingtoStateorFederalPrison', {
+                    
+               var myChart1L = Highcharts.chart('MaleLifetimeLikelihoodofGoingtoStateorFederalPrison', {
                     chart: {
                         type: 'spline'
                     },
@@ -290,6 +291,182 @@
                         },
                         data: [3.6, 4.1, 6, 9.1, 10.6, 11.3],
                         dashStyle: 'dot'
+                    }]
+                });
+            });
+            </script>
+
+<!-- Male Lifetime Likelihood of Going to State or Federal Prison by Race Chart -->    
+            <script>
+                $(function () { 
+                    // set the theme
+                Highcharts.createElement('link', {
+                   href: 'https://fonts.googleapis.com/css?family=Neuton|Roboto',
+                   rel: 'stylesheet',
+                   type: 'text/css'
+                }, null, document.getElementsByTagName('head')[0]);
+
+                Highcharts.setOptions({
+                    colors: ['#41C2B9', '#517ACA', '#FFC555', '#FF9F55', '#01998E', '#1244A6', '#F9A402', '#F96D02', '#9BEAE5'],
+                    chart: {
+                        style: {
+                         fontFamily: 'Neuton, serif'
+                      }
+                    },
+                    title: {
+                      style: {
+                         fontSize: '20px',
+                         fontWeight: 'bold',
+                         fontFamily: 'Roboto, sans-serif'
+                      }
+                   },
+                    subtitle: {
+                        style: {
+                            color: '#8E8892',
+                            fontFamily: 'Neuton, serif',
+                            fontSize: '16px'
+                        }
+                    },
+                    xAxis: {
+                        lineColor: '#707070',
+                        lineWidth: .5,
+                        tickWidth: .5,
+                        tickColor: '#707070',
+                        labels: {
+                            style: {
+                                color: '#707070',
+                                fontSize: '14px',
+                            }
+                        },
+                        crosshair: {
+                            color: "rgba(205, 204, 204, .25)"
+                        },
+                      title: {
+                        style: {
+                          color: '#4E4852',
+                          fontSize: '15px',
+                          fontFamily: 'Roboto, sans-serif'
+                        }
+                        }
+                    },
+                    yAxis: {
+                        lineColor: '#707070',
+                        lineWidth: .5,
+                        tickWidth: .5,
+                        tickColor: '#707070',
+                        labels: {
+                            style: {
+                                color: '#707070',
+                                fontSize: '14px',
+                            }
+                        },
+                        title: {
+                            style: {
+                                color: '#4E4852',
+                                    fontSize: '14px',
+                                    fontFamily: 'Roboto, sans-serif'
+                            }
+                        }
+                    },
+                    tooltip: {
+                            style: {
+                                color: '#4E4852',
+                                    fontSize: '12px',
+                                    fontFamily: 'Roboto, sans-serif'
+                            },
+                      headerFormat: '<small><b>{point.key}</b></small><table>' + '<br/>',
+                      borderWidth: 0,
+                      backgroundColor: '#fff',
+                      shadow: true
+                   },
+                    legend: {
+                        itemStyle: {
+                          color: '#4E4852',
+                          fontSize: '12px',
+                          fontFamily: 'Roboto, sans-serif'
+                        },
+                        itemHoverStyle: {
+                            color: '#9D9D9D'
+                        },
+                        itemHiddenStyle: {
+                            color: '#CDCCCC'
+                        }
+                    },
+
+                    labels: {
+                        style: {
+                            color: '#99b'
+                        }
+                    }
+                });
+
+                var myChart2L = Highcharts.chart('MaleArrestsRatesbyOffenseType', {
+                    chart: {
+                        type: 'column'
+                    },
+                    title: {
+                        text: 'Male Arrests Rates by Offense Type, 1980 and 2009'
+                    },
+                    subtitle: {
+                        text: ' '
+                    },
+                    xAxis: {
+                        categories: [
+                            'Homicide',
+                            'Rape',
+                            'Robbery',
+                            'Aggravated assault',
+                            'Simple Assault',
+                            'Burglary',
+                            'Larceny',
+                            'Motor Vehicle theft',
+                            'Weapon',
+                            'Possession',
+                            'Drug Sale'
+                        ],
+                        title: {
+                            text: ''
+                        },
+                        crosshair: true
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: 'Arrests per 100,000 of the population'
+                        }
+                    },
+                    tooltip: {
+                        pointFormat: '<span style="color:{series.color}">{series.name}</span>: {point.y:.1f}<br/>',
+                        shared: true
+                    },
+                    credits: {
+                        enabled: false
+                    },
+                    exporting: { 
+                        enabled: false 
+                      },
+                    plotOptions: {
+                        column: {
+                            pointPadding: 0.2,
+                            borderWidth: 0
+                        }
+                    },
+                    series: [{
+                        name: 'White 1980',
+                        data: [5.3, 9.9, 30.9, 89.6, 168.6, 184.8, 415, 48.6, 53.9, 182.1, 43.7]
+
+                    }, {
+                        name: 'White 2009',
+                        data: [2.5, 6.4, 22, 108.8, 350.2, 81, 369, 20.3, 38.8, 367.3, 72.5]
+
+                    }, {
+                        name: 'African-American 1980',
+                        data: [35, 70.7, 314.3, 366.6, 569.6, 544.7, 1337.6, 151.8, 221.5, 341, 163.9]
+
+                    }, {
+                        name: 'African-American 2009',
+                        data: [14.8, 19.7, 171.5, 344.8, 1023.8, 229, 941.1, 71.7, 165.4, 1039.6, 311.6]
+
                     }]
                 });
             });
