@@ -51,14 +51,25 @@
 						<section class="wrapper style5">
 							<div class="inner">
 
-								<h3>Lorem ipsum dolor</h3>
+								<h3>Then</h3>
 								<p>African-Americans had a very difficult time in court, especially with the segregation laws implemented that varied from place to place. Being arrested for a minor offense, and facing an all white jury and judge led to many convictions, often with inflated charges. In addition to this African-American witnesses were not allowed to testify against whites. It was not about whether or not someone was innocent, it was about being black and making an example out of them to further enforce white superiority.</p>
 
 								<div class="box">
                                         <p>"White and colored prisoners shall not be confined or shackled together in the same room of any building or tent, either in the State prison or at any State or county convict camp, during the eating or sleeping hours, and at all other times the separation of the races shall be as complete as practicable. Any officer or employee of either the State or any county in the State having charge of convicts or prisoners who shall violate or permit the violation of this section shall be guilty of a misdemeanor, and upon conviction shall be fined not more than fifty dollars [$50.00] or imprisoned not more than thirty [30] days." - North Carolina, 1909</p>
                                     </div>
-
-								<hr />
+                                    
+                                    </div>
+						</section>
+					</article>
+                    
+				        <section id="cta" class="wrapper style4">
+                            <div class="inner">
+                            </div>
+					    </section>
+					    
+					<article id="main_e">
+                    <section class="wrapper style5">
+							<div class="inner">
 
 								<h3>Now</h3>
 								<p>An article on www.civilrights.org states, “Our civil rights laws abolished Jim Crow laws and other vestiges of segregation, and guaranteed minority citizens the right to travel and utilize public accommodations freely. Yet today, racial profiling and police brutality make such travel hazardous to the dignity and health of law-abiding black and Hispanic citizens. Today, our criminal justice system strays far from this ideal. Unequal treatment of minorities characterizes every stage of the process. Black and Hispanic Americans, and other minority groups as well, are victimized by disproportionate targeting and unfair treatment by police and other front-line law enforcement officials; by racially skewed charging and plea bargaining decisions of prosecutors; by discriminatory sentencing practices; and by the failure of judges, elected officials and other criminal justice policymakers to redress the inequities that become more glaring every day.”</p>
@@ -66,6 +77,9 @@
 								<blockquote>“young black men are more likely to go to prison than to college.”</blockquote>
 
 								<p>More African Americans are in prison or jail, on probation or parole—than were enslaved in 1850, a decade before the Civil War began.7 The proportion of African-American prisoners incarcerated relative to whites has more than doubled in that same period. African-Americans men receive prison sentences 19.5 percent longer than those of white men who committed similar crimes, a 2013 report by the U.S. Sentencing Commission found.</p>
+								
+								<span class="image fit"><div id="MaleLifetimeLikelihoodofGoingtoStateorFederalPrison" style="min-width: 310px; width: 66%; height: 400px; margin: 0 auto"></div><center><p style="font-size:10pt; line-height:1.25em; width: 66%; color:#8E8892"><b>Source:</b> Bonczar, T. P. 2003. Prevalence of Imprisonment in the U.S. Population 1974-2001.</p></center>  
+                                </span>
 								
                                 <p>The focus from non violent and petty crimes in the past have turned into one focused on drug possession and sales. With the Anti-Drug Abuse Act of 1986 there are mandatory minimums for drug offenses. There are also monetary incentives for state and local police agencies to implement the war on drugs. Similarly to convict leasing private companies have a cheap, easy labor market, "Federal funding has flowed to state and local law enforcement agencies who boost the sheer numbers of drug arrests. State and local law enforcement agencies have been rewarded in cash for the sheer numbers of people swept into the system for drug offenses, thus giving law enforcement agencies an incentive to go out and look for the so-called 'low-hanging fruit': stopping, frisking, searching as many people as possible, pulling over as many cars as possible, in order to boost their numbers up and ensure the funding stream will continue or increase." </p>
                                 
@@ -94,6 +108,192 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script src="https://code.highcharts.com/highcharts.js"></script>
+            <script src="https://code.highcharts.com/modules/exporting.js"></script>
+            
+        <!-- Chart Style -->    
+            <script>
+                $(function () { 
+                // set the theme
+                Highcharts.createElement('link', {
+                   href: 'https://fonts.googleapis.com/css?family=Neuton|Roboto',
+                   rel: 'stylesheet',
+                   type: 'text/css'
+                }, null, document.getElementsByTagName('head')[0]);
+
+                Highcharts.setOptions({
+                    colors: ['#41C2B9', '#517ACA', '#FF9F55', '#CDCCCC', '#01998E', '#1244A6', '#F9A402', '#F96D02', '#9BEAE5'],
+                    chart: {
+                        style: {
+                         fontFamily: 'Neuton, serif'
+                      }
+                    },
+                    title: {
+                      style: {
+                         fontSize: '20px',
+                         fontWeight: 'bold',
+                         fontFamily: 'Roboto, sans-serif'
+                      }
+                   },
+                    subtitle: {
+                        style: {
+                            color: '#8E8892',
+                            fontFamily: 'Neuton, serif',
+                            fontSize: '16px'
+                        }
+                    },
+                    xAxis: {
+                        lineColor: '#707070',
+                        lineWidth: .5,
+                        tickWidth: .5,
+                        tickColor: '#707070',
+                        labels: {
+                            style: {
+                                color: '#707070',
+                                fontSize: '14px',
+                            }
+                        },
+                        crosshair: {
+                            color: "rgba(205, 204, 204, .25)"
+                        },
+                      title: {
+                        style: {
+                          color: '#4E4852',
+                          fontSize: '14px',
+                          fontFamily: 'Roboto, sans-serif'
+                        }
+                        }
+                    },
+                    yAxis: {
+                        lineColor: '#707070',
+                        lineWidth: .5,
+                        tickWidth: .5,
+                        tickColor: '#707070',
+                        labels: {
+                            style: {
+                                color: '#707070',
+                                fontSize: '14px',
+                            }
+                        },
+                        title: {
+                            style: {
+                                color: '#4E4852',
+                                    fontSize: '14px',
+                                    fontFamily: 'Roboto, sans-serif'
+                            }
+                        }
+                    },
+                    tooltip: {
+                            style: {
+                                color: '#4E4852',
+                                    fontSize: '12px',
+                                    fontFamily: 'Roboto, sans-serif'
+                            },
+                      headerFormat: '<small><b>{point.key}</b></small><table>' + '<br/>',
+                      borderWidth: 0,
+                      backgroundColor: '#fff',
+                      shadow: true
+                   },
+                    legend: {
+                        itemStyle: {
+                          color: '#4E4852',
+                          fontSize: '12px',
+                          fontFamily: 'Roboto, sans-serif'
+                        },
+                        itemHoverStyle: {
+                            color: '#9D9D9D'
+                        },
+                        itemHiddenStyle: {
+                            color: '#CDCCCC'
+                        }
+                    },
+
+                    labels: {
+                        style: {
+                            color: '#99b'
+                        }
+                    }
+                });
+            });
+            </script>
+            
+        <!-- Male Lifetime Likelihood of Going to State or Federal Prison by Race Chart -->    
+            <script>
+                $(function () { 
+               var myChart1E = Highcharts.chart('MaleLifetimeLikelihoodofGoingtoStateorFederalPrison', {
+                    chart: {
+                        type: 'spline'
+                    },
+                    title: {
+                        text: 'Male Lifetime Likelihood of Going to State or Federal Prison by Race, 1974–2001'
+                    },
+                    subtitle: {
+                        text: '  '
+                    },
+                    xAxis: {
+                        title: {
+                            text: 'Year of Birth'
+                        },
+                        categories: ['1974', '1979', '1986', '1991', '1997', '2001']
+                    },
+                    yAxis: {
+                        title: {
+                            text: ' '
+                        },
+                        labels: {
+                            formatter: function () {
+                                 return this.value + '%';
+                            }
+                        }
+                    },
+                    tooltip: {
+                        crosshairs: true,
+                        shared: true
+                    },
+
+                    credits: {
+                        enabled: false
+                    },
+                    exporting: { enabled: false },
+                    plotOptions: {
+                        spline: {
+                            marker: {
+                                radius: 4,
+                                lineColor: '#fff',
+                                lineWidth: 2
+                            }
+                        }
+                    },
+                    series: [{
+                        name: 'White',
+                        marker: {
+                            symbol: 'circle'
+                        },
+                        data: [2.2, 2.5, 3.6, 4.4, 5.4, 5.9]
+
+                    }, {
+                        name: 'African-American',
+                        marker: {
+                            symbol: 'circle'
+                        },
+                        data: [13.4, 13.4, 17.4, 29.4, 31, 32.2]
+                    }, {
+                        name: 'Hispanic',
+                        marker: {
+                            symbol: 'circle'
+                        },
+                        data: [4, 6, 11.1, 16.3, 18, 17.2]
+                    }, {
+                        name: 'All Males',
+                        marker: {
+                            symbol: 'circle'
+                        },
+                        data: [3.6, 4.1, 6, 9.1, 10.6, 11.3],
+                        dashStyle: 'dot'
+                    }]
+                });
+            });
+            </script>
 
 	</body>
 </html>
