@@ -3700,6 +3700,366 @@
 		background-attachment: scroll;
 	}
 
+/* Economic */
+
+	#main_e > header {
+		padding: 12em 0 10em 0 ;
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner_economic.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner_economic.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner_economic.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner_economic.jpg");
+		background-attachment: fixed;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+	}
+
+		#main_e > header h2 {
+			font-size: 1.75em;
+			margin: 0 0 0.5em 0;
+		}
+
+		#main_e > header p {
+			color: inherit;
+			letter-spacing: 0.225em;
+			text-transform: uppercase;
+			top: 0;
+		}
+
+			#main_e > header p a {
+				color: inherit;
+			}
+
+		@media screen and (max-width: 1680px) {
+
+			#main_e > header {
+				padding: 10em 0 8em 0 ;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			#main_e > header {
+				padding: 8em 3em 6em 3em ;
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			#main_e > header {
+				padding: 10em 3em 8em 3em ;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#main_e > header {
+				padding: 5em 3em 3em 3em ;
+			}
+
+				#main_e > header h2 {
+					font-size: 1.25em;
+					margin: 0 0 1em 0;
+				}
+
+		}
+
+	body.is-mobile #main_e > header {
+		background-attachment: scroll;
+	}
+
+/* Political */
+
+	#main_p > header {
+		padding: 12em 0 10em 0 ;
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner_political.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner_political.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner_political.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner_political.jpg");
+		background-attachment: fixed;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+	}
+
+		#main_p > header h2 {
+			font-size: 1.75em;
+			margin: 0 0 0.5em 0;
+		}
+
+		#main_p > header p {
+			color: inherit;
+			letter-spacing: 0.225em;
+			text-transform: uppercase;
+			top: 0;
+		}
+
+			#main_p > header p a {
+				color: inherit;
+			}
+
+		@media screen and (max-width: 1680px) {
+
+			#main_p > header {
+				padding: 10em 0 8em 0 ;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			#main_p > header {
+				padding: 8em 3em 6em 3em ;
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			#main_p > header {
+				padding: 10em 3em 8em 3em ;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#main_p > header {
+				padding: 5em 3em 3em 3em ;
+			}
+
+				#main_p > header h2 {
+					font-size: 1.25em;
+					margin: 0 0 1em 0;
+				}
+
+		}
+
+	body.is-mobile #main_p > header {
+		background-attachment: scroll;
+	}
+
+/* Legal */
+
+	#main_l > header {
+		padding: 12em 0 10em 0 ;
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner_legal.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner_legal.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner_legal.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner_legal.jpg");
+		background-attachment: fixed;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+	}
+
+		#main_l > header h2 {
+			font-size: 1.75em;
+			margin: 0 0 0.5em 0;
+		}
+
+		#main_l > header p {
+			color: inherit;
+			letter-spacing: 0.225em;
+			text-transform: uppercase;
+			top: 0;
+		}
+
+			#main_l > header p a {
+				color: inherit;
+			}
+
+		@media screen and (max-width: 1680px) {
+
+			#main_l > header {
+				padding: 10em 0 8em 0 ;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			#main_l > header {
+				padding: 8em 3em 6em 3em ;
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			#main_l > header {
+				padding: 10em 3em 8em 3em ;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#main_l > header {
+				padding: 5em 3em 3em 3em ;
+			}
+
+				#main_l > header h2 {
+					font-size: 1.25em;
+					margin: 0 0 1em 0;
+				}
+
+		}
+
+	body.is-mobile #main_l > header {
+		background-attachment: scroll;
+	}
+
+/* Social */
+
+	#main_s > header {
+		padding: 12em 0 10em 0 ;
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner_social.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner_social.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner_social.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner_social.jpg");
+		background-attachment: fixed;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+	}
+
+		#main_s > header h2 {
+			font-size: 1.75em;
+			margin: 0 0 0.5em 0;
+		}
+
+		#main_s > header p {
+			color: inherit;
+			letter-spacing: 0.225em;
+			text-transform: uppercase;
+			top: 0;
+		}
+
+			#main_s > header p a {
+				color: inherit;
+			}
+
+		@media screen and (max-width: 1680px) {
+
+			#main_s > header {
+				padding: 10em 0 8em 0 ;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			#main_s > header {
+				padding: 8em 3em 6em 3em ;
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			#main_s > header {
+				padding: 10em 3em 8em 3em ;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#main_s > header {
+				padding: 5em 3em 3em 3em ;
+			}
+
+				#main_s > header h2 {
+					font-size: 1.25em;
+					margin: 0 0 1em 0;
+				}
+
+		}
+
+	body.is-mobile #main_s > header {
+		background-attachment: scroll;
+	}
+
+/* Personal */
+
+	#main_r > header {
+		padding: 12em 0 10em 0 ;
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner_personal.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner_personal.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner_personal.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner_personal.jpg");
+		background-attachment: fixed;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+	}
+
+		#main_r > header h2 {
+			font-size: 1.75em;
+			margin: 0 0 0.5em 0;
+		}
+
+		#main_r > header p {
+			color: inherit;
+			letter-spacing: 0.225em;
+			text-transform: uppercase;
+			top: 0;
+		}
+
+			#main_r > header p a {
+				color: inherit;
+			}
+
+		@media screen and (max-width: 1680px) {
+
+			#main_r > header {
+				padding: 10em 0 8em 0 ;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			#main_r > header {
+				padding: 8em 3em 6em 3em ;
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			#main_r > header {
+				padding: 10em 3em 8em 3em ;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#main_r > header {
+				padding: 5em 3em 3em 3em ;
+			}
+
+				#main_r > header h2 {
+					font-size: 1.25em;
+					margin: 0 0 1em 0;
+				}
+
+		}
+
+	body.is-mobile #main_r > header {
+		background-attachment: scroll;
+	}
+
 /* Footer */
 
 	#footer {
@@ -3794,7 +4154,7 @@
 	}
 
 	body.landing #footer {
-		background-color: rgba(112, 112, 112, 0.9);
+		background-color: rgba(112, 112, 112, 0.5);
 	}
 
 	body.is-mobile.landing #page-wrapper {
