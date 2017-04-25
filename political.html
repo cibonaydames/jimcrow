@@ -72,10 +72,25 @@
                                     <p>"The tax collector shall keep a separate account of the amount of the poll taxes paid by persons, of each race in each township or separate school district." - Alabama, 1935</p>
                                 </div>
 
-								<hr />
+								</div>
+						</section>
+					</article>
+                    
+				        <section id="cta" class="wrapper style4">
+                            <div class="inner">
+                            </div>
+					    </section>
+					    
+					<article id="main_e">
+                    <section class="wrapper style5">
+							<div class="inner">
 
 								<h3>Now</h3>
+								
 								<p>Still, former felons, which account for 6.1 million people in 2016, are not allowed to vote in most states. 1 of every 13 African Americans of voting age is disenfranchised, a rate more than four times greater than non-African Americans. There are also restrictions on those who are currently serving sentences or on parole or probation. Purging is also another method still used today that affect people of color. Any registered voter in the state can challenge another voter’s registration. These voters are notified via mail and must appear at a county board of elections or return a notarized form in order to maintain their ability to vote. </p>
+								
+								<span class="image fit"><div id="ShareofPeoplewhoareEligibletoVote" style="min-width: 310px; width: 66%; height: 400px; margin: 0 auto"></div><center><p style="font-size:10pt; line-height:1.25em; width: 66%; color:#8E8892"><b>Sources:</b> Michael P. McDonald.  2002.  "The Turnout Rate Among Eligible Voters for U.S. States, 1980-2000."  State Politics and Policy Quarterly 2(2): 199-212.</p></center>  
+                                </span>
 
 								<p>Although most the methods that were used to prevent African-Americans to vote are no longer in place there are now news laws that still put a burden on eligible voters. Cuts to early voting, voter ID laws and purges of voter rolls make it harder for African-Americans, as well as students, people with disabilities and the elderly to vote.</p>
 								
@@ -102,6 +117,172 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+            <script src="https://code.highcharts.com/highcharts.js"></script>
+            <script src="https://code.highcharts.com/modules/exporting.js"></script>
+            
+            
+        <!-- AverageFamilyWealthbyRace Chart -->    
+            <script>
+                $(function () { 
+               var myChart1P = // set the theme
+                Highcharts.createElement('link', {
+                   href: 'https://fonts.googleapis.com/css?family=Neuton|Roboto',
+                   rel: 'stylesheet',
+                   type: 'text/css'
+                }, null, document.getElementsByTagName('head')[0]);
+
+                Highcharts.setOptions({
+                    colors: ['#41C2B9', '#517ACA', '#FF9F55', '#FFC555', '#01998E', '#1244A6', '#F9A402', '#F96D02', '#9BEAE5'],
+                    chart: {
+                        style: {
+                         fontFamily: 'Neuton, serif'
+                      }
+                    },
+                    title: {
+                      style: {
+                         fontSize: '20px',
+                         fontWeight: 'bold',
+                         fontFamily: 'Roboto, sans-serif'
+                      }
+                   },
+                    subtitle: {
+                        style: {
+                            color: '#8E8892',
+                            fontFamily: 'Neuton, serif',
+                            fontSize: '16px'
+                        }
+                    },
+                    xAxis: {
+                        lineColor: '#707070',
+                        lineWidth: .5,
+                        tickWidth: .5,
+                        tickColor: '#707070',
+                        labels: {
+                            style: {
+                                color: '#707070',
+                                fontSize: '14px',
+                            }
+                        },
+                        crosshair: {
+                            color: "rgba(205, 204, 204, .25)"
+                        },
+                      title: {
+                        style: {
+                          color: '#4E4852',
+                          fontSize: '15px',
+                          fontFamily: 'Roboto, sans-serif'
+                        }
+                        }
+                    },
+                    yAxis: {
+                        lineColor: '#707070',
+                        lineWidth: .5,
+                        tickWidth: .5,
+                        tickColor: '#707070',
+                        labels: {
+                            style: {
+                                color: '#707070',
+                                fontSize: '14px',
+                            }
+                        },
+                        title: {
+                            style: {
+                                color: '#4E4852',
+                                    fontSize: '14px',
+                                    fontFamily: 'Roboto, sans-serif'
+                            }
+                        }
+                    },
+                    tooltip: {
+                            style: {
+                                color: '#4E4852',
+                                    fontSize: '12px',
+                                    fontFamily: 'Roboto, sans-serif'
+                            },
+                      headerFormat: '<small><b>{point.key}</b></small><table>' + '<br/>',
+                      borderWidth: 0,
+                      backgroundColor: '#fff',
+                      shadow: true
+                   },
+                    legend: {
+                        itemStyle: {
+                          color: '#4E4852',
+                          fontSize: '12px',
+                          fontFamily: 'Roboto, sans-serif'
+                        },
+                        itemHoverStyle: {
+                            color: '#9D9D9D'
+                        },
+                        itemHiddenStyle: {
+                            color: '#CDCCCC'
+                        }
+                    },
+
+                    labels: {
+                        style: {
+                            color: '#99b'
+                        }
+                    }
+                });
+
+
+
+                Highcharts.chart('ShareofPeoplewhoareEligibletoVote', {
+                    chart: {
+                        type: 'column'
+                    },
+                    title: {
+                        text: 'Share of People Who are Eligible to Vote, 1986-2014'
+                    },
+                    xAxis: {
+                        categories: ['1986', '1988', '1990', '1992', '1994', '1996', '1998', '2000', '2002', '2004', '2006', '2008', '2010', '2012', '2014']
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: 'Share of Electorate'
+                        },
+                        labels: {
+                            formatter: function () {
+                                 return this.value + '%';
+                            }
+                        }
+                    },
+                    tooltip: {
+                        pointFormat: '<span style="color:{series.color}">{series.name}</span>: {point.y:.1f}%<br/>',
+                        shared: true
+                    },
+                     credits: {
+                        enabled: false
+                    },
+                    exporting: { 
+                        enabled: false 
+                      },
+                    plotOptions: {
+                        column: {
+                            stacking: 'percent'
+                        }
+                    },
+                    series: [{
+                        name: 'White',
+                        data: [85, 85.1, 85.6, 84.9, 85, 82.7, 82.3, 81, 81.9, 79.5, 81, 76.6, 77.9, 74.1, 76.9]
+                    },
+                    {
+                        name: 'African-American',
+                        data: [10, 9.7, 9.3, 9.8, 9.2, 10.4, 10.5, 11.2, 10.7, 11.1, 10, 12.3, 11.4, 13.2, 11.9]
+                    },
+                    {
+                        name: 'Hispanic',
+                        data: [3.6, 3.6, 3.5, 3.7, 4.0, 4.6, 4.8, 5.4, 5.1, 5.9, 5.6, 7.3, 6.8, 8.3, 7.0]
+                    }, 
+                    {
+                        name: 'Other',
+                        data: [1.5, 1.7, 1.6, 1.7, 1.8, 2.2, 2.4, 2.4, 2.4, 3.6, 3.4, 3.8, 3.9, 4.4, 4.2]
+                    } 
+                     ]
+                });
+            });
+            </script>
 
 	</body>
 </html>
