@@ -60,12 +60,38 @@
                                     <p>"It shall also be the duty of said board of education to make arrangements for the instruction of the children of the white and colored races in separate schools. They shall, as far as practicable, provide the same facilities for both races in respect to attainments and abilities of teachers but the children of the white and colored races shall not be taught together in any common or public school ..." - Georgia, 1919</p>
                                 </div>
 
-								<hr />
+								</div>
+						</section>
+					</article>
+                    
+				        <section id="cta" class="wrapper style4">
+                            <div class="inner">
+                            </div>
+					    </section>
+					    
+					<article id="main_e">
+                    <section class="wrapper style5">
+							<div class="inner">
 
 								<h3>Now</h3>
 								<p>Despite discrimination in employment, housing, education, public benefits even successful people of color continue to face disparities. Still, separate translates to unequal even for the most successful black and Hispanic minorities who are are more likely to live in poorer neighborhoods than white people who have comparable incomes.</p>
 
 								<p>Income is not the main factor when it comes to segregation, on average, African-American and Hispanic households live in neighborhoods with more than one and a half times the poverty rate of neighborhoods where the average white lives. Neighborhood poverty is associated with inequalities in jobs, public schools, safety, environmental quality, lack of grocery stores, hospitals and public health.</p>
+								
+								<span class="image fit">
+                                
+                                <div id="AverageNeighborhoodPoverty" style="min-width: 310px; width: 66%; height: 400px; margin: 0 auto"></div>
+                                   <div class="select-wrapper" style="width:110px; text-align: center; font-size:10pt; margin: auto;">
+                                           <select name="demo-category" id="list"  style="font-size:10pt; line-height:1.25em; color:#707070">
+                                            <option id="y1990" value="a" selected=yes>1990</option> 
+                                            <option id="y2000" value="b">2000</option>
+                                            <option id="y2005" value="c">2005-2009</option>
+                                        </select>
+                                    </div>
+                                   <br/>
+                                  
+                                    <center><p style="font-size:10pt; line-height:1.25em; width: 66%; color:#8E8892"><b>Source:</b> US2010 Project</p></center>  
+                                </span>
 								
 								<p>According to the National Association for Advancement for Colored People, “The promise of a quality education is an important civil and human right that has yet to be fully realized in the American public education system. African Americans are more likely to attend high-poverty schools, that is, public schools where more than 75 percent of students are eligible for free or reduced-price lunch and are less likely to graduate from high school. They subsequently attend college at rates lower than any other racial group.” </p>
 								
@@ -92,6 +118,216 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script src="https://code.highcharts.com/highcharts.js"></script>
+            <script src="https://code.highcharts.com/modules/exporting.js"></script>
+            
+            
+        <!-- Average Neighborhood Poverty Chart -->    
+            <script>
+                $(function () { 
+                    // set the theme
+                    Highcharts.createElement('link', {
+                       href: 'https://fonts.googleapis.com/css?family=Neuton|Roboto',
+                       rel: 'stylesheet',
+                       type: 'text/css'
+                    }, null, document.getElementsByTagName('head')[0]);
+
+                    Highcharts.setOptions({
+                        colors: ['#41C2B9','#517ACA','#FF9F55', '#FFC555' , '#F9A402', '#1244A6', '#1244A6', '#01998E','#9BEAE5', '#F96D02', '#F96D02'],
+                        chart: {
+                            style: {
+                             fontFamily: 'Neuton, serif'
+                          }
+                        },
+                        title: {
+                          style: {
+                             fontSize: '20px',
+                             fontWeight: 'bold',
+                             fontFamily: 'Roboto, sans-serif'
+                          }
+                       },
+                        subtitle: {
+                            style: {
+                                color: '#8E8892',
+                                fontFamily: 'Neuton, serif',
+                                fontSize: '16px'
+                            }
+                        },
+                        xAxis: {
+                            lineColor: '#707070',
+                            lineWidth: .5,
+                            tickWidth: .5,
+                            tickColor: '#707070',
+                            labels: {
+                                style: {
+                                    color: '#707070',
+                                    fontSize: '14px',
+                                }
+                            },
+                            crosshair: {
+                                                color: "rgba(205, 204, 204, .25)"
+                                            },
+                          title: {
+                            style: {
+                              color: '#4E4852',
+                              fontSize: '15px',
+                              fontFamily: 'Roboto, sans-serif'
+                            }
+                            }
+                        },
+                        yAxis: {
+                            lineColor: '#707070',
+                            lineWidth: .5,
+                            tickWidth: .5,
+                            tickColor: '#707070',
+                            labels: {
+                                style: {
+                                    color: '#707070',
+                                    fontSize: '14px',
+                                }
+                            },
+                            title: {
+                                style: {
+                                    color: '#4E4852',
+                                        fontSize: '14px',
+                                        fontFamily: 'Roboto, sans-serif'
+                                }
+                            }
+                        },
+                        tooltip: {
+                                style: {
+                                    color: '#4E4852',
+                                        fontSize: '12px',
+                                        fontFamily: 'Roboto, sans-serif'
+                                },
+                          headerFormat: '<small><b>{point.key}</b></small><table>' + '<br/>',
+                          borderWidth: 0,
+                          backgroundColor: '#fff',
+                          shadow: true
+                       },
+                        legend: {
+                            itemStyle: {
+                              color: '#4E4852',
+                              fontSize: '12px',
+                              fontFamily: 'Roboto, sans-serif'
+                            },
+                            itemHoverStyle: {
+                                color: '#9D9D9D'
+                            },
+                            itemHiddenStyle: {
+                                color: '#CDCCCC'
+                            }
+                        },
+
+                        labels: {
+                            style: {
+                                color: '#99b'
+                            }
+                        }
+                    });
+                    
+               var chartPoverty
+
+                $(document).ready(function () {
+                    chartPoverty = Highcharts.chart('AverageNeighborhoodPoverty', {
+                    chart: {
+                        renderTo: 'containerAvg',
+                        type: 'column'
+                    },
+                    title: {
+                        text: 'Average Neighborhood Poverty by Race and Household Income in Metropolitan Regions'
+                    },
+                    
+                    credits: {
+                        enabled: false
+                    },
+                  exporting: { 
+                    enabled: false 
+                                  },
+                    legend: {},
+                    plotOptions: {
+                        series: {
+                            shadow: false,
+                            borderWidth: 0
+                        }
+                    },
+                    xAxis: {
+                        categories: ['Poor', 'Middle', 'Affluent'],
+                        title: {
+                            text: 'Household Income'
+                        }
+                    },
+                    yAxis: {
+                        labels: {
+                            format: '{value}'
+                        },
+                        title: {
+                            text: ''
+                        }
+                    },
+                    tooltip: {
+                      pointFormat: '<span style="color:{series.color}">{series.name}</span>: {point.y:.1f}<br/>',
+                      shared: true
+                    },
+                    series: [{
+                        "name": "White",
+                            "data": [12.4, 9.9, 7.8]
+                    }, {
+                        "name": "African-American",
+                            "data": [24.8, 18.8, 15.4]
+                    }, {
+                        "name": "Hispanic",
+                            "data": [22.8, 17.3, 13.3]
+                    }, {
+                        "name": "Asian",
+                            "data": [16.3, 11.7, 8.3]
+                    }]
+
+
+
+                });
+            });
+
+
+            $("#list").on('change', function () {
+                //alert('f')
+                var selVal = $("#list").val();
+
+
+                if (selVal == "a") {
+                    chartPoverty.series[0].setData(
+                                 [12.4, 9.9, 7.8]);
+                            chartPoverty.series[1].setData(
+                            [24.8, 18.8, 15.4]);
+                    chartPoverty.series[2].setData(
+                            [22.8, 17.3, 13.3]);
+                    chartPoverty.series[3].setData(
+                            [16.3, 11.7, 8.3]);
+                } else if (selVal == "b") {
+                    chartPoverty.series[0].setData(
+                           [11.6, 9.6, 7.7]);
+                            chartPoverty.series[1].setData(
+                            [21.9, 17.3, 14.3]);
+                    chartPoverty.series[2].setData(
+                            [20.9, 16.8, 13.5]);
+                    chartPoverty.series[3].setData(
+                            [16.3, 11.9, 8.7]);
+                } else if (selVal == "c") {
+                    chartPoverty.series[0].setData(
+                           [12.9, 10.9, 8.9]);
+                            chartPoverty.series[1].setData(
+                            [21.8, 17.3, 13.9]);
+                    chartPoverty.series[2].setData(
+                            [19.9, 16.2, 13]);
+                    chartPoverty.series[3].setData(
+                            [15.2, 11.6, 8.7]);
+
+                } else {
+
+                    }
+                });
+            });
+            </script>
 
 	</body>
 </html>
