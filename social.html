@@ -144,6 +144,11 @@
 											</tbody>
 										</table>
 									</div>
+									
+								<p>One policy that is particularly harmful to students of color is the zero-tolerance policy. This policy criminalize minor infractions of school rules and pushes a large number of kids into the juvenile and criminal justice systems where they face adult consequences instead of getting the support they need from school counselors and their communities. While black students represent 16% of student enrollment, they represent 27% of students referred to law enforcement and 31% of students subjected to a school-related arrest. In comparison, white students represent 51% of enrollment, 41% of students referred to law enforcement, and 39% of those arrested.Many of these children have learning disabilities or histories of poverty, abuse, or neglect.</p>
+								
+								<span class="image fit"><div id="PreschoolersReceivingSuspensionsbyRace" style="min-width: 310px; width: 66%; height: 400px; margin: 0 auto"></div><center><p style="font-size:10pt; line-height:1.25em; width: 66%; color:#8E8892"><b>Source:</b> U.S. Department of Education Office for Civil Rights.</p></center>  
+                                </span>
 
 							</div>
 						</section>
@@ -379,7 +384,169 @@
             });
             </script>
 
-        <!-- PercentageofRacialGroupinMinoritySchools Chart-->
+        <!-- PreschoolersReceivingSuspensionsbyRace Chart-->
+        <script>
+                $(function () { 
+               var myChart2S = // set the theme
+                    Highcharts.createElement('link', {
+                       href: 'https://fonts.googleapis.com/css?family=Neuton|Roboto',
+                       rel: 'stylesheet',
+                       type: 'text/css'
+                    }, null, document.getElementsByTagName('head')[0]);
+
+                    Highcharts.setOptions({
+                        colors: ['#41C2B9', '#517ACA', '#01998E','#1244A6', '#9BEAE5', '#FF9F55', '#F96D02','#1244A6', '#FFC555',  '#F9A402', '#F96D02'],
+                        chart: {
+                            style: {
+                             fontFamily: 'Neuton, serif'
+                          }
+                        },
+                        title: {
+                          style: {
+                             fontSize: '20px',
+                             fontWeight: 'bold',
+                             fontFamily: 'Roboto, sans-serif'
+                          }
+                       },
+                        subtitle: {
+                            style: {
+                                color: '#8E8892',
+                                fontFamily: 'Neuton, serif',
+                                fontSize: '16px'
+                            }
+                        },
+                        xAxis: {
+                            lineColor: '#707070',
+                            lineWidth: .5,
+                            tickWidth: .5,
+                            tickColor: '#707070',
+                            labels: {
+                                style: {
+                                    color: '#707070',
+                                    fontSize: '14px',
+                                }
+                            },
+                            crosshair: {
+                                color: "rgba(205, 204, 204, .25)"
+                            },
+                          title: {
+                            style: {
+                              color: '#4E4852',
+                              fontSize: '15px',
+                              fontFamily: 'Roboto, sans-serif'
+                            }
+                            }
+                        },
+                        yAxis: {
+                            lineColor: '#707070',
+                            lineWidth: .5,
+                            tickWidth: .5,
+                            tickColor: '#707070',
+                            labels: {
+                                style: {
+                                    color: '#707070',
+                                    fontSize: '14px',
+                                }
+                            },
+                            title: {
+                                style: {
+                                    color: '#4E4852',
+                                        fontSize: '14px',
+                                        fontFamily: 'Roboto, sans-serif'
+                                }
+                            }
+                        },
+                        tooltip: {
+                                style: {
+                                    color: '#4E4852',
+                                        fontSize: '12px',
+                                        fontFamily: 'Roboto, sans-serif'
+                                },
+                          headerFormat: '<small><b>{point.key}</b></small><table>' + '<br/>',
+                          borderWidth: 0,
+                          backgroundColor: '#fff',
+                          shadow: true
+                       },
+                        legend: {
+                            itemStyle: {
+                              color: '#4E4852',
+                              fontSize: '12px',
+                              fontFamily: 'Roboto, sans-serif'
+                            },
+                            itemHoverStyle: {
+                                color: '#9D9D9D'
+                            },
+                            itemHiddenStyle: {
+                                color: '#CDCCCC'
+                            }
+                        },
+
+                        labels: {
+                            style: {
+                                color: '#99b'
+                            }
+                        }
+                    });
+
+                    var myChart2s = Highcharts.chart('PreschoolersReceivingSuspensionsbyRace', {
+                        chart: {
+                            type: 'column'
+                        },
+                        title: {
+                            text: 'Preschoolers Receiving Suspensions by Race'
+                        },
+                        subtitle: {
+                            text: ' '
+                        },
+                        xAxis: {
+                            categories: [
+                                'Percent of Total Enrolled',
+                                'Percent of Total Receiving a Single Out of School Suspension',
+                                'Percent of Total Receiving Multiple Out of School Suspension'
+                            ],
+                            title: {
+                                text: ''
+                            },
+                            crosshair: true
+                        },
+                        yAxis: {
+                            min: 0,
+                            title: {
+                                text: ' '
+                            },
+                            labels: {
+                                formatter: function () {
+                                     return this.value + '%';
+                                }
+                            }
+                        },
+                        tooltip: {
+                            pointFormat: '<span style="color:{series.color}">{series.name}</span>: {point.y:.1f}%<br/>',
+                            shared: true
+                        },
+                        credits: {
+                            enabled: false
+                        },
+                        exporting: { 
+                            enabled: false 
+                          },
+                        plotOptions: {
+                            column: {
+
+                            }
+                        },
+                        series: [{
+                            name: 'White',
+                            data: [43, 28, 26]
+
+                        }, {
+                            name: 'African-American',
+                            data: [18, 42, 48]
+
+                        }]
+                    });
+            });
+            </script>
 
 	</body>
 </html>
